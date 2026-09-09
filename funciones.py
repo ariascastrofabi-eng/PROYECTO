@@ -12,6 +12,7 @@ def validador_sistema(usuario,contraseña):
         while i <= len(usuarios):
             if usuarios[i] == usuario and contraseñas_nuevas[i] == contraseña:
                 print("ACCESO CONCEDIDO")
+                print(f"{usuarios[i]}")
                 menu_usuario()
                 return True
             i+=1
