@@ -71,6 +71,7 @@ def eliminar_usuario():
         i=usuarios.index(usuario_eliminar)
         usuarios.pop(i)
         contraseñas_nuevas.remove(contraseñas_nuevas[i])
+        print("ELIMINADO CON EXITO")
     else:
         print("NO HAY ESE USUARIO PARA ELIMINAR")
 #ESTOS ABAJO SON LAS FUNCIONES DEL USUARIO
