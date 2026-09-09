@@ -1,4 +1,4 @@
-def menu_administrador():
+def menu_administrador(usuario):
     while True:
         print("==========MENU DE ADMINISTRADOR=======")
         print("1.Registrar usuario")

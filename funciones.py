@@ -5,7 +5,7 @@ contraseñas_nuevas=["1234","1235","ajajja"]
 def validador_sistema(usuario,contraseña):
     if usuario == "ARIAS" and contraseña == "63":
         print(f"ACCESO CONDEDIO DE ADMINISTRADOR: {usuario}")
-        menu_administrador()
+        menu_administrador(usuario)
     elif usuario in usuarios and contraseña in contraseñas_nuevas:
         i=0
         while i <= len(usuarios):
@@ -94,7 +94,7 @@ def operaciones():
         if clientes <= 0 or venta <= 0:
             print("no se puede con eso")
         else:
-            promedio_cantidad=clientes/venta
-            print(f"EL TOTAL DE VENTA SON DE {promedio_cantidad}")
+            promedio_cantidad=venta/clientes
+            print(f"EL TOTAL DE VENTA SON DE {promedio_cantidad:.1f}")
     except ZeroDivisionError:
         print("NO SE PUEDE DIVIDIR ENTRE CERO")
