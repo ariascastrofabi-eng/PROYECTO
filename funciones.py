@@ -77,15 +77,15 @@ def eliminar_usuario():
 #ESTOS ABAJO SON LAS FUNCIONES DEL USUARIO
 
 def ver_usuarios_nomas():
-
+    print("=======LOS USUARIOS SON========")
     for i in usuarios:
-        print(f"LOS USUARIOS SON:{i}")
+        print(f"USUARIO:{i}")
 
-def consultar_dato(usuario):
-    print(f"==========DATOS_DEL_USUARIO {usuario}======== ")
-    print(f"ERES CASADO")
-    print(f"TIENES HIJOS")
-    print(f"ERES BUENO EN EL TRABAJO")
+def informacion_dato(usuario):
+    print(f"==========DATOS DEL USUARIO: {usuario}======== ")
+    print(f"ES CASADO")
+    print(f"TIENE HIJOS")
+    print(f"ES DEMASIADO BUENO EN EL TRABAJO")
 
 def operaciones():
     venta=int(input("INGRESA LA VENTA DEL DIA TOTAL: "))
@@ -95,6 +95,6 @@ def operaciones():
             print("no se puede con eso")
         else:
             promedio_cantidad=venta/clientes
-            print(f"EL TOTAL DE VENTA SON DE {promedio_cantidad:.1f}")
+            print(f"EL PROMEDIO POR CLIENTE ES DE: {promedio_cantidad:.1f}")
     except ZeroDivisionError:
         print("NO SE PUEDE DIVIDIR ENTRE CERO")

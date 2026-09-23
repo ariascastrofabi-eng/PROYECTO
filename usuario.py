@@ -10,16 +10,16 @@ def menu_usuario(usuario):
             opcion1=int(input("INGRESA UN NUMERO CORRECTO(1-4): "))
             match opcion1:
                 case 1:
-                    from funciones import ver_usuarios_nomas
-                    print("ver")
-                    ver_usuarios_nomas()
+                    from funciones import informacion_dato
+                    print("PERFIL PERSONAL")
+                    informacion_dato(usuario)
                 case 2:
-                    from funciones import consultar_dato
-                    print("consultar")
-                    consultar_dato(usuario)
+                    from funciones import ver_usuarios_nomas
+                    print("consultar datos de otros usuarios")
+                    ver_usuarios_nomas()
                 case 3:
                     from funciones import operaciones
-                    print("realizar")
+                    print("realizar promedio de venta")
                     operaciones()
                 case 4:
                     print("SALIENDO")
